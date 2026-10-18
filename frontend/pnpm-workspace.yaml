@@ -1,0 +1,6 @@
+# pnpm settings for the web app (this directory is its own pnpm root).
+# Dependency lifecycle scripts are denied unless listed here, so installs are
+# non-interactive and reproducible.
+allowBuilds:
+  # The postinstall only copies the browser service worker; tests use msw/node.
+  msw: false

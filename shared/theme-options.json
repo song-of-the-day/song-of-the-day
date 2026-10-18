@@ -1,0 +1,121 @@
+{
+  "$comment": "Single source of truth for profile customization options. Read by the Flask API (validation) and the React app (UI + rendering). Changing a key here is a breaking change for stored themes; add a data migration if you rename or remove one.",
+  "version": 1,
+  "default_preset": "chrome",
+  "fonts": [
+    { "key": "inter", "label": "Inter", "category": "sans", "family": "'Inter Variable', 'Inter', system-ui, sans-serif" },
+    { "key": "space-grotesk", "label": "Space Grotesk", "category": "sans", "family": "'Space Grotesk Variable', 'Space Grotesk', system-ui, sans-serif" },
+    { "key": "space-mono", "label": "Space Mono", "category": "mono", "family": "'Space Mono', ui-monospace, monospace" },
+    { "key": "vt323", "label": "VT323", "category": "pixel", "family": "'VT323', ui-monospace, monospace" },
+    { "key": "silkscreen", "label": "Silkscreen", "category": "pixel", "family": "'Silkscreen', ui-monospace, monospace" },
+    { "key": "orbitron", "label": "Orbitron", "category": "display", "family": "'Orbitron Variable', 'Orbitron', system-ui, sans-serif" },
+    { "key": "playfair-display", "label": "Playfair Display", "category": "serif", "family": "'Playfair Display Variable', 'Playfair Display', Georgia, serif" },
+    { "key": "courier-prime", "label": "Courier Prime", "category": "mono", "family": "'Courier Prime', 'Courier New', monospace" },
+    { "key": "comic-neue", "label": "Comic Neue", "category": "handwriting", "family": "'Comic Neue', 'Comic Sans MS', cursive" },
+    { "key": "pacifico", "label": "Pacifico", "category": "handwriting", "family": "'Pacifico', cursive" }
+  ],
+  "patterns": [
+    { "key": "none", "label": "None" },
+    { "key": "grid", "label": "Grid" },
+    { "key": "dots", "label": "Dots" },
+    { "key": "stars", "label": "Stars" },
+    { "key": "checker", "label": "Checker" },
+    { "key": "stripes", "label": "Stripes" },
+    { "key": "scanlines", "label": "Scanlines" }
+  ],
+  "image_fits": [
+    { "key": "cover", "label": "Fill" },
+    { "key": "tile", "label": "Tile" }
+  ],
+  "card_styles": [
+    { "key": "window", "label": "Window" },
+    { "key": "polaroid", "label": "Polaroid" },
+    { "key": "minimal", "label": "Minimal" }
+  ],
+  "default_views": [
+    { "key": "board", "label": "Board" },
+    { "key": "calendar", "label": "Calendar" }
+  ],
+  "note_ink": "#1C1A24",
+  "note_colors": [
+    { "key": "yellow", "label": "Yellow", "hex": "#FFF3A3" },
+    { "key": "pink", "label": "Pink", "hex": "#FFC8E1" },
+    { "key": "blue", "label": "Blue", "hex": "#C7E3FF" },
+    { "key": "green", "label": "Green", "hex": "#C9F5D3" },
+    { "key": "purple", "label": "Purple", "hex": "#E2D4FF" }
+  ],
+  "presets": [
+    {
+      "key": "chrome",
+      "label": "Chrome",
+      "theme": {
+        "preset": "chrome",
+        "colors": { "background": "#E8E6F0", "surface": "#FFFFFF", "text": "#1C1A24", "accent": "#5B4BFF", "border": "#B8B3CC" },
+        "fonts": { "heading": "silkscreen", "body": "inter" },
+        "background": { "pattern": "grid", "image_upload_id": null, "image_fit": "cover" },
+        "card_style": "window",
+        "default_view": "calendar"
+      }
+    },
+    {
+      "key": "bubblegum",
+      "label": "Bubblegum",
+      "theme": {
+        "preset": "bubblegum",
+        "colors": { "background": "#FFE3F0", "surface": "#FFF7FB", "text": "#3D0F2B", "accent": "#C8006D", "border": "#F4A6CB" },
+        "fonts": { "heading": "pacifico", "body": "comic-neue" },
+        "background": { "pattern": "dots", "image_upload_id": null, "image_fit": "cover" },
+        "card_style": "polaroid",
+        "default_view": "calendar"
+      }
+    },
+    {
+      "key": "midnight-crt",
+      "label": "Midnight CRT",
+      "theme": {
+        "preset": "midnight-crt",
+        "colors": { "background": "#07090C", "surface": "#0E141B", "text": "#B8F5C8", "accent": "#33FF85", "border": "#1E3A2A" },
+        "fonts": { "heading": "vt323", "body": "space-mono" },
+        "background": { "pattern": "scanlines", "image_upload_id": null, "image_fit": "cover" },
+        "card_style": "window",
+        "default_view": "calendar"
+      }
+    },
+    {
+      "key": "mint-disc",
+      "label": "Mint Disc",
+      "theme": {
+        "preset": "mint-disc",
+        "colors": { "background": "#DFF7EF", "surface": "#FFFFFF", "text": "#0F2E27", "accent": "#007A5C", "border": "#9ED9C5" },
+        "fonts": { "heading": "orbitron", "body": "space-grotesk" },
+        "background": { "pattern": "stars", "image_upload_id": null, "image_fit": "cover" },
+        "card_style": "minimal",
+        "default_view": "calendar"
+      }
+    },
+    {
+      "key": "sunset-mixtape",
+      "label": "Sunset Mixtape",
+      "theme": {
+        "preset": "sunset-mixtape",
+        "colors": { "background": "#FFF0DB", "surface": "#FFF9F0", "text": "#3A1E0C", "accent": "#B83A08", "border": "#EDC294" },
+        "fonts": { "heading": "playfair-display", "body": "courier-prime" },
+        "background": { "pattern": "stripes", "image_upload_id": null, "image_fit": "cover" },
+        "card_style": "polaroid",
+        "default_view": "calendar"
+      }
+    },
+    {
+      "key": "paper",
+      "label": "Paper",
+      "theme": {
+        "preset": "paper",
+        "colors": { "background": "#FAFAF7", "surface": "#FFFFFF", "text": "#151515", "accent": "#151515", "border": "#DCDCD6" },
+        "fonts": { "heading": "inter", "body": "inter" },
+        "background": { "pattern": "none", "image_upload_id": null, "image_fit": "cover" },
+        "card_style": "minimal",
+        "default_view": "calendar"
+      }
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+/*
+ * Page background. <Backdrop> renders a fixed, aria-hidden `.sotd-backdrop`
+ * layer with either `data-pattern="<key>"` (a pattern from theme-options.json, drawn in
+ * --sotd-border) or `data-image-fit="cover|tile"` plus an inline `background-image` for an
+ * uploaded image.
+ */
+@layer components {
+  .sotd-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-color: var(--sotd-bg);
+  }
+
+  [data-pattern='none'] {
+    background-image: none;
+  }
+
+  [data-pattern='grid'] {
+    background-image:
+      linear-gradient(var(--sotd-border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--sotd-border) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+
+  [data-pattern='dots'] {
+    background-image: radial-gradient(circle, var(--sotd-border) 0 1.5px, transparent 2px);
+    background-size: 18px 18px;
+  }
+
+  [data-pattern='stars'] {
+    background-image:
+      radial-gradient(circle at 12% 18%, var(--sotd-border) 0 2px, transparent 2.5px),
+      radial-gradient(circle at 68% 34%, var(--sotd-border) 0 1px, transparent 1.5px),
+      radial-gradient(circle at 38% 72%, var(--sotd-border) 0 1.5px, transparent 2px),
+      radial-gradient(circle at 86% 82%, var(--sotd-border) 0 2.5px, transparent 3px),
+      radial-gradient(circle at 52% 8%, var(--sotd-border) 0 1px, transparent 1.5px);
+    background-size: 120px 120px;
+  }
+
+  [data-pattern='checker'] {
+    background-image: conic-gradient(
+      color-mix(in srgb, var(--sotd-border) 45%, transparent) 25%,
+      transparent 0 50%,
+      color-mix(in srgb, var(--sotd-border) 45%, transparent) 0 75%,
+      transparent 0
+    );
+    background-size: 32px 32px;
+  }
+
+  [data-pattern='stripes'] {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      var(--sotd-border) 0 2px,
+      transparent 2px 16px
+    );
+  }
+
+  [data-pattern='scanlines'] {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      var(--sotd-border) 0 1px,
+      transparent 1px 4px
+    );
+  }
+
+  [data-image-fit='cover'] {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  [data-image-fit='tile'] {
+    background-position: top left;
+    background-repeat: repeat;
+    background-size: auto;
+  }
+}

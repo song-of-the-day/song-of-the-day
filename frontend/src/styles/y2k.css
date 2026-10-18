@@ -1,0 +1,155 @@
+/*
+ * "Y2K minimal" component classes. Colors come only from theme variables;
+ * the glossy highlight is a neutral white sheen that works on any accent.
+ */
+@layer components {
+  :root {
+    --y2k-gloss: rgb(255 255 255 / 0.35);
+  }
+
+  /* Window card: hairline border and a hard 2px offset shadow in the border color. */
+  .y2k-window {
+    border: 1px solid var(--sotd-border);
+    background-color: var(--sotd-surface);
+    color: var(--sotd-text);
+    box-shadow: 2px 2px 0 var(--sotd-border);
+  }
+
+  /* Thin title bar holding a heading-font date stamp and the window dots. */
+  .y2k-titlebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    min-height: 1.75rem;
+    padding: 0.125rem 0.5rem;
+    border-bottom: 1px solid var(--sotd-border);
+    font-family: var(--sotd-font-heading);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  /* Three tiny window dots; decorative, so mark the element aria-hidden. */
+  .y2k-dots {
+    flex: none;
+    width: 30px;
+    height: 8px;
+    background-image:
+      radial-gradient(circle at 3px 50%, var(--sotd-accent) 0 3px, transparent 3.5px),
+      radial-gradient(circle at 15px 50%, var(--sotd-muted) 0 3px, transparent 3.5px),
+      radial-gradient(circle at 27px 50%, var(--sotd-border) 0 3px, transparent 3.5px);
+  }
+
+  /* Polaroid card: thick surface-colored frame with the caption below the artwork. */
+  .y2k-polaroid {
+    padding: 0.625rem 0.625rem 0.875rem;
+    border: 1px solid var(--sotd-border);
+    background-color: var(--sotd-surface);
+    color: var(--sotd-text);
+    box-shadow: 0 2px 0 var(--sotd-border);
+  }
+
+  .y2k-polaroid-caption {
+    padding-top: 0.625rem;
+    text-align: center;
+  }
+
+  /* Glossy pill: rounded ends with a subtle top highlight over the background color. */
+  .y2k-pill {
+    border-radius: 9999px;
+    background-image: linear-gradient(to bottom, var(--y2k-gloss), transparent 55%);
+    box-shadow: inset 0 1px 0 var(--y2k-gloss);
+  }
+
+  /* Sticker date stamp: heading font, dashed accent outline, slightly tilted. */
+  .y2k-stamp {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.125rem 0.5rem;
+    border: 1px dashed var(--sotd-accent);
+    border-radius: 0.25rem;
+    background-color: var(--sotd-surface);
+    color: var(--sotd-text);
+    font-family: var(--sotd-font-heading);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    rotate: -2deg;
+  }
+
+  /*
+   * Sticky note: pastel background from `--y2k-note-color` (set inline from a note color's hex),
+   * text always in the note ink, a strip of tape, and a ±1° tilt that alternates per note.
+   */
+  .y2k-note {
+    position: relative;
+    padding: 0.875rem 0.75rem 0.75rem;
+    background-color: var(--y2k-note-color, var(--sotd-surface));
+    color: var(--sotd-note-ink);
+    box-shadow: 1px 2px 0 color-mix(in srgb, var(--sotd-note-ink) 18%, transparent);
+    rotate: -1deg;
+  }
+
+  .y2k-note:nth-child(even) {
+    rotate: 1deg;
+  }
+
+  .y2k-note::before {
+    position: absolute;
+    top: -0.5rem;
+    left: 50%;
+    width: 3.5rem;
+    height: 1rem;
+    border: 1px solid color-mix(in srgb, var(--sotd-note-ink) 12%, transparent);
+    background-color: color-mix(in srgb, var(--sotd-surface) 65%, transparent);
+    content: '';
+    translate: -50% 0;
+    rotate: 3deg;
+  }
+
+  /* Sparkle accent after the element's text; hidden from assistive technology. */
+  .y2k-sparkle::after {
+    margin-inline-start: 0.25em;
+    color: var(--sotd-accent);
+    content: '\2726';
+    content: '\2726' / '';
+  }
+
+  /* Subtle lift on hover for interactive cards (motion is disabled under reduced motion). */
+  .y2k-lift {
+    transition:
+      translate 150ms ease,
+      box-shadow 150ms ease;
+  }
+
+  .y2k-lift:hover {
+    translate: -1px -1px;
+    box-shadow: 3px 3px 0 var(--sotd-border);
+  }
+}
+
+/* Entrance animations (`motion-safe:animate-pop-in`, `motion-safe:animate-fade-in`). */
+@theme {
+  --animate-pop-in: sotd-pop-in 160ms ease-out;
+  --animate-fade-in: sotd-fade-in 160ms ease-out;
+
+  @keyframes sotd-pop-in {
+    from {
+      opacity: 0;
+      transform: translateY(4px) scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes sotd-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

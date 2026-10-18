@@ -1,0 +1,492 @@
+[
+  {
+    "title": "Feeling Good",
+    "artist": "Nina Simone",
+    "album": "I Put a Spell On You",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/18/db/05/18db0507-f276-d93d-a4a7-e856a3f1590a/13UAAIM08283.rgb.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/37/1e/4a/371e4a5b-e1ad-2538-b3ad-51ba97ba1927/mzaf_408951216543324718.plus.aac.p.m4a",
+    "duration_ms": 177655,
+    "note": "First warm day of the year. Windows down, this one on repeat."
+  },
+  {
+    "title": "A Change Is Gonna Come",
+    "artist": "Sam Cooke",
+    "album": "A Change Is Gonna Come - EP",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5c/af/dc/5cafdc13-ba15-bcc9-800c-dd42aac696ee/00018771021025.rgb.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/ff/87/d4ff8724-2cd8-c5d4-3894-9fef2968177a/mzaf_17538140509361254142.plus.aac.p.m4a",
+    "duration_ms": 191320
+  },
+  {
+    "title": "Here Comes the Sun",
+    "artist": "The Beatles",
+    "album": "Abbey Road (Remastered)",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/df/db/61/dfdb615d-47f8-06e9-9533-b96daccc029f/18UMGIM31076.rgb.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cd/7d/83/cd7d834f-34bf-7be0-1647-0fb0920d25a7/mzaf_5281747653026802926.plus.aac.p.m4a",
+    "duration_ms": 185733,
+    "annotations": [
+      {
+        "start_ms": 33431,
+        "end_ms": 63149,
+        "body": "This is the part.",
+        "color": "yellow"
+      }
+    ]
+  },
+  {
+    "title": "What's Going On",
+    "artist": "Marvin Gaye",
+    "album": "What's Going On",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/76/36/2d/76362d74-cb7a-8ef9-104e-cde1d858e9a9/20UMGIM95279.rgb.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/08/f3/f4/08f3f452-b24f-e25b-92bc-15850f1bdc6a/mzaf_14002930736666872327.plus.aac.p.m4a",
+    "duration_ms": 232628,
+    "note": "Heard this in the record shop and couldn't leave without it."
+  },
+  {
+    "title": "A Case of You",
+    "artist": "Joni Mitchell",
+    "album": "Blue",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/00/a2/43/00a24363-cf69-bfd2-a26a-a042d57ab141/075992719926.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bc/8e/e6/bc8ee6e2-9fb8-75a1-bdf9-37f97a009fef/mzaf_1734596607807807485.plus.aac.p.m4a",
+    "duration_ms": 262827,
+    "youtube_video_id": "qAZp5JfDmz4"
+  },
+  {
+    "title": "Let's Stay Together",
+    "artist": "Al Green",
+    "album": "Let's Stay Together",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/d8/ec/4f/d8ec4f92-0691-9151-1738-9fbe2e19a270/886445144888.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a1/cc/b3/a1ccb365-d4a7-f371-7e6c-c4b745b41acc/mzaf_2282300440028225493.plus.aac.p.m4a",
+    "duration_ms": 199396,
+    "note": "Kitchen dancing while the pasta boiled. No regrets."
+  },
+  {
+    "title": "Isn't She Lovely",
+    "artist": "Stevie Wonder",
+    "album": "Songs in the Key of Life",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/eb/1f/12/eb1f12ec-474c-63aa-43af-09282f423b9d/00602537004737.rgb.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/57/f3/4357f3c7-c96f-78ab-68cb-91fadb304610/mzaf_7298171201706575382.plus.aac.p.m4a",
+    "duration_ms": 394377
+  },
+  {
+    "title": "Tangled Up In Blue",
+    "artist": "Bob Dylan",
+    "album": "Blood On the Tracks",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/34/6e/4d/346e4d1c-c9ef-cf7f-96d9-aad97286febb/074643323529.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/70/8e/ec/708eec4c-079e-fac8-5210-28257ce306b1/mzaf_1200789325963087621.plus.aac.p.m4a",
+    "duration_ms": 340776,
+    "annotations": [
+      {
+        "start_ms": 143125,
+        "end_ms": null,
+        "body": "That bass line though.",
+        "color": "pink"
+      },
+      {
+        "start_ms": 207873,
+        "end_ms": 265805,
+        "body": "The harmonies here are ridiculous.",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "title": "Dreams",
+    "artist": "Fleetwood Mac",
+    "album": "Greatest Hits",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d2/48/f4/d248f4ae-a7e4-a48e-1588-6617de3e8d76/mzi.izeorbmm.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b6/5a/4b/b65a4b6f-54dd-ee99-0b36-98e27d5b5dd8/mzaf_13813391014293209258.plus.aac.p.m4a",
+    "duration_ms": 254453,
+    "note": "Dad used to play this on Sunday mornings. Still holds up."
+  },
+  {
+    "title": "Lovely Day",
+    "artist": "Bill Withers",
+    "album": "The Best Of Bill Withers: Lean On Me",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/3a/93/40/3a9340a1-73f7-5bbb-86a2-15a4ba20acea/884977735840.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/4f/4d/4d4f4def-089f-5ead-eb65-c2e754c4eb0b/mzaf_17532940935688196080.plus.aac.p.m4a",
+    "duration_ms": 255067
+  },
+  {
+    "title": "\"Heroes\" (2017 Remaster)",
+    "artist": "David Bowie",
+    "album": "\"Heroes\" (2017 Remaster)",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/65/b2/e265b2ae-48d5-9dd8-0251-6cd6c6c4eb53/190295842826.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/f3/12/1ff3122a-eb3e-373d-d524-cfe00de9b19a/mzaf_8446634475827049231.plus.aac.p.m4a",
+    "duration_ms": 371417,
+    "note": "The thirty-second preview wasn't nearly enough."
+  },
+  {
+    "title": "Running Up That Hill (A Deal With God)",
+    "artist": "Kate Bush",
+    "album": "Hounds of Love",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2c/3e/c9/2c3ec991-0f6e-bec3-7eff-750f50c5b3a6/cover.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9d/b4/87/9db487bc-9aa6-390d-911d-7e234bc227f0/mzaf_571823162673168934.plus.aac.p.m4a",
+    "duration_ms": 298933
+  },
+  {
+    "title": "This Must Be the Place (Naive Melody)",
+    "artist": "Talking Heads",
+    "album": "The Best of Talking Heads (Remastered)",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2004/m08/d17/h21/s06.xwrnkppg.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bd/a5/d5/bda5d529-d316-cb8b-6846-7fcd4ddd5ec5/mzaf_15954399121800890128.plus.aac.p.m4a",
+    "duration_ms": 296133,
+    "youtube_video_id": "_aNQFcNNnrE"
+  },
+  {
+    "title": "Purple Rain",
+    "artist": "Prince & The Revolution",
+    "album": "Purple Rain (Deluxe Expanded Edition) [2015 Paisley Park Remaster]",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c1/b6/79/c1b679f5-d59d-1b3e-62ab-514de20f06c6/093624912002.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4a/70/9b/4a709b41-3c29-626a-ca69-44aa907f4705/mzaf_14388295257133509788.plus.aac.p.m4a",
+    "duration_ms": 524649,
+    "note": "Train window, grey fields, this song. Perfect."
+  },
+  {
+    "title": "Smooth Operator (Single Version)",
+    "artist": "Sade",
+    "album": "The Best of Sade",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5f/ad/2a/5fad2aca-d998-701d-7b27-c074339d5fd0/886972262628.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c6/db/56/c6db5666-4464-a6e5-d6e8-8d481b926e70/mzaf_17727462257578713488.plus.aac.p.m4a",
+    "duration_ms": 258693,
+    "annotations": [
+      {
+        "start_ms": 20695,
+        "end_ms": 41390,
+        "body": "The drum fill here is unreal.",
+        "color": "green"
+      },
+      {
+        "start_ms": 90542,
+        "end_ms": null,
+        "body": "Wait for the drop.",
+        "color": "yellow"
+      },
+      {
+        "start_ms": 173324,
+        "end_ms": 212128,
+        "body": "The outro could go on forever.",
+        "color": "purple"
+      }
+    ]
+  },
+  {
+    "title": "Just Like Heaven",
+    "artist": "The Cure",
+    "album": "Kiss Me, Kiss Me, Kiss Me",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2004/m11/d24/h19/s06.lkkhqoax.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/86/96/49/8696498e-c448-fd66-7d3f-b02fe43ea12d/mzaf_6925694512417375942.plus.aac.p.m4a",
+    "duration_ms": 212000,
+    "note": "Made me miss someone I haven't thought about in years."
+  },
+  {
+    "title": "Bizarre Love Triangle",
+    "artist": "New Order",
+    "album": "Brotherhood",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e4/4c/dc/e44cdc30-89d8-1b46-8e1f-57c0bbbc9ce7/825646051175.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fe/1d/62/fe1d62bd-f1f0-6293-20f0-a20d436e0e69/mzaf_4982129497529076018.plus.aac.p.m4a",
+    "duration_ms": 261987
+  },
+  {
+    "title": "Fast Car",
+    "artist": "Tracy Chapman",
+    "album": "Tracy Chapman",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b8/c4/31/b8c431e9-a67d-3917-72e5-be9f5a1ebc46/075596077460.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6f/52/41/6f5241a2-3e98-3c1f-3cda-11f34da680aa/mzaf_3951335061988287211.plus.aac.p.m4a",
+    "duration_ms": 296800
+  },
+  {
+    "title": "Eye Know (feat. Otis Redding)",
+    "artist": "De La Soul",
+    "album": "3 Feet High and Rising",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a8/d7/21/a8d72124-208c-c85c-b72e-a6c7cd54aed4/810098502627.png/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/ea/2d/b1ea2d3d-9f6d-8ae3-a27d-51c164b8908d/mzaf_5353647127081739577.plus.aac.p.m4a",
+    "duration_ms": 252672,
+    "note": "Loud enough that the neighbours probably know it now."
+  },
+  {
+    "title": "Can I Kick It?",
+    "artist": "A Tribe Called Quest",
+    "album": "People's Instinctive Travels and the Paths of Rhythm (25th Anniversary Edition)",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b6/05/21/b605217c-42ee-8c1e-238b-0fc18570b10d/196873025063.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/04/0d/ae/040daef9-ee90-cb16-9913-fe057ca584c9/mzaf_1871516679999556308.plus.aac.p.m4a",
+    "duration_ms": 251790,
+    "youtube_video_id": "D-uV8TGjaGU"
+  },
+  {
+    "title": "(Sittin' On) The Dock of the Bay",
+    "artist": "Otis Redding",
+    "album": "The Dock of the Bay",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/83/e1/02/83e102bb-b5b8-78ea-10ce-8f210211a9a8/603497889945.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/20/7f/14/207f141a-f7e5-26c1-9e5a-b4556444e467/mzaf_18196714768063505974.plus.aac.p.m4a",
+    "duration_ms": 166667,
+    "note": "A friend swore I'd love it. A friend was right."
+  },
+  {
+    "title": "Glory Box",
+    "artist": "Portishead",
+    "album": "Dummy",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c1/71/93/c1719342-df7d-e9c5-c87c-53dae5afb289/00042282855329.rgb.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/40/b2/a4/40b2a45b-eacf-818f-7af6-f7f8b3885230/mzaf_16256497095178600689.plus.aac.p.m4a",
+    "duration_ms": 308627,
+    "annotations": [
+      {
+        "start_ms": 74070,
+        "end_ms": 120364,
+        "body": "This section lives in my head rent-free.",
+        "color": "blue"
+      },
+      {
+        "start_ms": 169744,
+        "end_ms": null,
+        "body": "Turn it up right here.",
+        "color": "yellow"
+      }
+    ]
+  },
+  {
+    "title": "J\u00f3ga",
+    "artist": "Bj\u00f6rk",
+    "album": "Homogenic",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/7f/bd/d0/7fbdd0e0-c588-ef4b-a6dd-4dca21f8b41f/081227607364.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9f/66/27/9f662755-0dc2-678d-2986-2f62f18e8ccb/mzaf_3045265892977245319.plus.aac.p.m4a",
+    "duration_ms": 304427
+  },
+  {
+    "title": "Teardrop",
+    "artist": "Massive Attack",
+    "album": "Mezzanine",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0a/98/55/0a98555b-8d9d-3b46-660a-b91261557d17/00724384559953.rgb.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/a6/91/a3a691b0-8e49-399d-2585-ddcd6694c9f2/mzaf_16325826545413166648.plus.aac.p.m4a",
+    "duration_ms": 330773,
+    "note": "Sang the wrong lyrics with total confidence."
+  },
+  {
+    "title": "Digital Love",
+    "artist": "Daft Punk",
+    "album": "Discovery",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fd/4a/77/fd4a77db-0ebc-d043-41a2-f32fa1bb0fb4/dj.qrikkdwj.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/df/43/5b/df435bbf-129a-ec94-cebb-8c83e3a261e2/mzaf_13417326183095861767.plus.aac.p.m4a",
+    "duration_ms": 301373
+  },
+  {
+    "title": "Someday",
+    "artist": "The Strokes",
+    "album": "Is This It",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Features115/v4/ea/04/d4/ea04d45d-6f5d-ede6-fb64-71f3e6a6e62f/dj.ojkzzidd.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/d6/c6/9ad6c624-bbf7-94d3-de3f-260540df9e57/mzaf_18158070610569064058.plus.aac.p.m4a",
+    "duration_ms": 183440,
+    "note": "Sunday reset: laundry, plants, this on repeat."
+  },
+  {
+    "title": "Maps",
+    "artist": "Yeah Yeah Yeahs",
+    "album": "Maps - Single",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/86/62/5b/86625b73-67f1-8ebf-247f-33f3149db0dd/00602557330045.rgb.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/01/3a/d3/013ad33a-a2bb-dadd-b08a-4275f24b55ce/mzaf_3933455843602911147.plus.aac.p.m4a",
+    "duration_ms": 214973
+  },
+  {
+    "title": "Jesus, Etc.",
+    "artist": "Wilco",
+    "album": "Yankee Hotel Foxtrot",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/79/1d/3c/791d3cfe-d1b0-67a9-acbd-559fd83b3401/075597966961.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b6/4b/15/b64b1531-42a7-0137-7ace-637f51f90328/mzaf_12272212384732678218.plus.aac.p.m4a",
+    "duration_ms": 231000,
+    "youtube_video_id": "v4_O4Sj-XTs",
+    "annotations": [
+      {
+        "start_ms": 71610,
+        "end_ms": 101640,
+        "body": "My favourite twenty seconds of the month.",
+        "color": "purple"
+      },
+      {
+        "start_ms": 166320,
+        "end_ms": 207900,
+        "body": "Perfect moment for a deep breath.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "title": "Hold on, Hold On",
+    "artist": "Neko Case",
+    "album": "Fox Confessor Brings the Flood (Bonus Track Version)",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/d8/a0/5c/d8a05c3c-bc38-61f5-f30a-d29a500aff4d/0045778690879.png/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/43/34/2d/43342d5b-f481-1eff-5c1a-b1e931202823/mzaf_17823092175849462471.plus.aac.p.m4a",
+    "duration_ms": 166587,
+    "note": "That bass line has been stuck in my head all week."
+  },
+  {
+    "title": "Back To Black (Original Demo)",
+    "artist": "Amy Winehouse",
+    "album": "Back To Black (Remixes & B Sides) - EP",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/cd/6c/11/cd6c11b3-6300-0a29-d211-855847ed2c8c/00602547505040.rgb.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ec/4a/6f/ec4a6f94-25a1-86ba-de9f-301fcf79a231/mzaf_8070823192264176176.plus.aac.p.m4a",
+    "duration_ms": 181493
+  },
+  {
+    "title": "Weird Fishes / Arpeggi",
+    "artist": "Radiohead",
+    "album": "In Rainbows",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/dd/50/c7/dd50c790-99ac-d3d0-5ab8-e3891fb8fd52/634904032463.png/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3a/12/eb/3a12ebaf-89c1-1ac9-6821-3a1de510ef51/mzaf_14543910941982290973.plus.aac.p.m4a",
+    "duration_ms": 318187,
+    "note": "Found this on a rainy walk home. Took the long way."
+  },
+  {
+    "title": "1234",
+    "artist": "Feist",
+    "album": "The Reminder (Deluxe Version)",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/cc/f4/46/ccf44641-40d8-018d-1bb2-e86ed8b7beeb/00602547820976.rgb.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/24/cb/8b24cbb9-79d3-9fd9-fbd4-fdc1c69e7d69/mzaf_9141774875455564689.plus.aac.p.m4a",
+    "duration_ms": 183667
+  },
+  {
+    "title": "Mykonos",
+    "artist": "Fleet Foxes",
+    "album": "Sun Giant - EP",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/cd/a1/07/cda10780-d1b2-eb11-b8d1-fc5d72cda6b0/098787078169.png/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a4/e1/8a/a4e18a7d-764a-f77b-4b65-0487540d3e85/mzaf_5300751714829114859.plus.aac.p.m4a",
+    "duration_ms": 275307
+  },
+  {
+    "title": "Two Weeks",
+    "artist": "Grizzly Bear",
+    "album": "Two Weeks - Single",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b2/17/a9/b217a9c3-49cd-7a3e-dc4d-33d2a5b8586b/0801061927639.png/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4f/be/29/4fbe295f-907e-bb4a-1065-a362c758c9e1/mzaf_14597126517946721595.plus.aac.p.m4a",
+    "duration_ms": 246213,
+    "note": "Third coffee, deadline day, this got me through.",
+    "annotations": [
+      {
+        "start_ms": 120644,
+        "end_ms": null,
+        "body": "The key change gets me every time.",
+        "color": "pink"
+      }
+    ]
+  },
+  {
+    "title": "1901",
+    "artist": "Phoenix",
+    "album": "Wolfgang Amadeus Phoenix",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/28/8d/ab/288dabdd-f8de-80f6-1aab-40a24cb1b33f/00892038002190_Cover.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6b/b8/c2/6bb8c208-8e56-f76d-0a6a-571d5c31f147/mzaf_174417184682343939.plus.aac.p.m4a",
+    "duration_ms": 193107,
+    "youtube_video_id": "36_4xjLFjM0"
+  },
+  {
+    "title": "Dance Yrself Clean",
+    "artist": "LCD Soundsystem",
+    "album": "This Is Happening",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/96/92/e6/9692e643-bc82-ae9c-2791-1e26c8fb141e/5099964204352.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5b/69/69/5b696928-2059-838c-c950-7491592eaad3/mzaf_12246528469108513336.plus.aac.p.m4a",
+    "duration_ms": 536107,
+    "note": "Danced around the living room like nobody was watching."
+  },
+  {
+    "title": "Dancing On My Own",
+    "artist": "Robyn",
+    "album": "Body Talk, Pt. 1",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/19/67/e0/1967e01e-a8c3-a4af-72f2-037e180b5684/00602527436630.rgb.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/11/0e/9a110e6c-3283-bd58-edcb-e1bda11d2174/mzaf_10664124767606058273.plus.aac.p.m4a",
+    "duration_ms": 285973
+  },
+  {
+    "title": "The Suburbs",
+    "artist": "Arcade Fire",
+    "album": "The Suburbs",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ea/9f/1a/ea9f1ab0-4cac-c925-590d-14461f676912/886446576510.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dc/c5/43/dcc543fa-b27b-af1e-79ce-d3d918a4d712/mzaf_12413982163606594108.plus.aac.p.m4a",
+    "duration_ms": 315200
+  },
+  {
+    "title": "Hannah Hunt",
+    "artist": "Vampire Weekend",
+    "album": "Modern Vampires of the City",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b2/c7/94/b2c79469-1105-1a37-c092-5f889f6ed15a/634904055653.png/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a1/54/50/a154503e-2bd8-3a07-1a45-49a4546632ba/mzaf_3790909768961883262.plus.aac.p.m4a",
+    "duration_ms": 237973,
+    "note": "The kind of song that makes folding laundry feel cinematic."
+  },
+  {
+    "title": "Chicago",
+    "artist": "Sufjan Stevens",
+    "album": "Illinois",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/47/9e/a3/479ea382-2686-3ea9-3def-d67d81fb2ee3/mzi.lhtprasx.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/3a/98/433a9868-d74c-3c05-ffb9-13ae3aa5c706/mzaf_6371164588810414149.plus.aac.p.m4a",
+    "duration_ms": 364580,
+    "annotations": [
+      {
+        "start_ms": 21874,
+        "end_ms": 51041,
+        "body": "Lyrics that hit harder every time.",
+        "color": "yellow"
+      },
+      {
+        "start_ms": 138540,
+        "end_ms": 189581,
+        "body": "Heard this bit live and it changed the song.",
+        "color": "blue"
+      },
+      {
+        "start_ms": 291664,
+        "end_ms": 335413,
+        "body": "Quietest moment on the record, and the best.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "title": "On Melancholy Hill",
+    "artist": "Gorillaz",
+    "album": "Plastic Beach",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/b8/f9/b9/b8f9b9f8-a609-bde2-0302-349436ffc508/825646291038.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/87/f2/8387f25a-10a5-555b-e92e-fdb847a8d4f3/mzaf_10224209639070324902.plus.aac.p.m4a",
+    "duration_ms": 233867,
+    "note": "Chose it for the drive and it carried the whole afternoon."
+  },
+  {
+    "title": "Bloodbuzz Ohio",
+    "artist": "The National",
+    "album": "High Violet (Bonus Track Version)",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/75/1e/5e/751e5e63-f9f4-de93-b6b0-75578f47aced/652637300369.png/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/24/37/cc/2437cc84-8f94-2862-72f4-deb56eea9062/mzaf_3210024391436778677.plus.aac.p.m4a",
+    "duration_ms": 275933
+  },
+  {
+    "title": "Love On Top",
+    "artist": "Beyonc\u00e9",
+    "album": "4 (Expanded Edition)",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c9/6b/3f/c96b3ff3-9cf6-4ce6-05aa-9f11474bd569/886443938373.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fe/0d/43/fe0d4311-3027-745d-759b-aec3354a54e7/mzaf_10947966188805060685.plus.aac.p.m4a",
+    "duration_ms": 267541,
+    "youtube_video_id": "Ob7vObnFUJc"
+  },
+  {
+    "title": "Do I Wanna Know?",
+    "artist": "Arctic Monkeys",
+    "album": "AM",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/9c/b5/699cb5d6-115c-ff73-9d26-e57ea4350d72/887828031795.png/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/cb/ba/71cbbaa1-016b-0e73-dfc2-9f4ede9ddfc0/mzaf_16266777024198047150.plus.aac.p.m4a",
+    "duration_ms": 272394,
+    "note": "Quiet evening, headphones on, nothing else left to do."
+  },
+  {
+    "title": "Alright",
+    "artist": "Kendrick Lamar",
+    "album": "To Pimp a Butterfly",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b5/a6/91/b5a69171-5232-3d5b-9c15-8963802f83dd/15UMGIM15814.rgb.jpg/100x100bb.jpg",
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3b/27/4e/3b274eab-c2de-84c5-a68d-4f78f3269bac/mzaf_16117050990489545534.plus.aac.p.m4a",
+    "duration_ms": 219337,
+    "annotations": [
+      {
+        "start_ms": 127215,
+        "end_ms": 162309,
+        "body": "Could listen to this on loop all evening.",
+        "color": "pink"
+      }
+    ]
+  }
+]

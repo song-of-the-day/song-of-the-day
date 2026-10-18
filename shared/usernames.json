@@ -1,0 +1,22 @@
+{
+  "$comment": "Username rules shared by the Flask API (validation) and the React app (signup/customize forms and routing). Usernames appear in profile URLs (/<username>), so every top-level route of the web app must be listed in `reserved`. `messages` are the exact error sentences: checks run in the order length, pattern, reserved; {min_length}/{max_length} come from this file and {username} is the trimmed, lower-cased input.",
+  "min_length": 3,
+  "max_length": 30,
+  "pattern": "^[a-z0-9](?:[a-z0-9_-]*[a-z0-9])?$",
+  "pattern_description": "lowercase letters, numbers, - and _; must start and end with a letter or number",
+  "messages": {
+    "length": "Username must be between {min_length} and {max_length} characters.",
+    "pattern": "Username may only contain letters, numbers, hyphens or underscores, and cannot begin or end with a hyphen or underscore.",
+    "reserved": "Username {username} is unavailable.",
+    "taken": "Username {username} is already taken."
+  },
+  "reserved": [
+    "about", "account", "accounts", "admin", "administrator", "api", "app", "assets", "auth",
+    "blog", "calendar", "contact", "dashboard", "docs", "edit", "explore", "favicon.ico",
+    "feed", "forgot-password", "health", "healthz", "help", "home", "index", "legal", "login",
+    "logout", "me", "new", "null", "privacy", "profile", "register", "reset-password",
+    "robots.txt", "root", "search", "security", "settings", "signin", "signup", "sitemap.xml",
+    "song-of-the-day", "sotd", "static", "status", "support", "system", "terms", "undefined",
+    "user", "users", "www"
+  ]
+}

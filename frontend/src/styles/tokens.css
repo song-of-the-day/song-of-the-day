@@ -1,0 +1,41 @@
+/*
+ * Design tokens.
+ *
+ * Utilities (`bg-surface`, `text-fg`, `border-line`, `font-heading`, ...) resolve to `--sotd-*`
+ * variables. `@theme inline` is required: it makes utilities reference the variables instead of
+ * values resolved at :root, so runtime theme changes (useThemeVars) reach every utility.
+ *
+ * Tailwind's default palette is removed so components can only use theme colors.
+ */
+@theme {
+  --color-*: initial;
+}
+
+@theme inline {
+  --color-bg: var(--sotd-bg);
+  --color-surface: var(--sotd-surface);
+  --color-fg: var(--sotd-text);
+  --color-accent: var(--sotd-accent);
+  --color-line: var(--sotd-border);
+  --color-muted: var(--sotd-muted);
+  --color-accent-contrast: var(--sotd-accent-contrast);
+  --font-heading: var(--sotd-font-heading);
+  --font-body: var(--sotd-font-body);
+}
+
+/*
+ * Defaults from the default preset (what logged-out pages use). Must equal
+ * themeToCssVars(defaultTheme()); tokens.test.ts enforces it.
+ */
+:root {
+  --sotd-bg: #e8e6f0;
+  --sotd-surface: #ffffff;
+  --sotd-text: #1c1a24;
+  --sotd-accent: #5b4bff;
+  --sotd-border: #b8b3cc;
+  --sotd-muted: #6b6a71;
+  --sotd-accent-contrast: #ffffff;
+  --sotd-font-heading: 'Silkscreen', ui-monospace, monospace;
+  --sotd-font-body: 'Inter Variable', 'Inter', system-ui, sans-serif;
+  --sotd-note-ink: #1c1a24;
+}

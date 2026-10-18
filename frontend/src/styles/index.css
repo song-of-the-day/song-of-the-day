@@ -1,0 +1,44 @@
+/* Tailwind entry: tokens, base styles, background patterns and Y2K component classes. */
+@import 'tailwindcss';
+@import './tokens.css';
+@import './patterns.css';
+@import './y2k.css';
+
+@layer base {
+  /*
+   * Only <html> gets the page color, so it propagates to the canvas. A body background would be
+   * painted above <Backdrop>'s fixed z-index:-1 layer and hide the pattern or image.
+   */
+  html {
+    background-color: var(--sotd-bg);
+  }
+
+  body {
+    min-height: 100dvh;
+    color: var(--sotd-text);
+    font-family: var(--sotd-font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--sotd-accent);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background-color: var(--sotd-accent);
+    color: var(--sotd-accent-contrast);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

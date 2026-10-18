@@ -1,0 +1,36 @@
+# Overrides for Playwright end-to-end runs:
+#
+#   docker compose -f docker-compose.yml -f docker-compose.e2e.yml up -d --build --wait
+#   cd frontend && E2E_BASE_URL=http://localhost:8080 pnpm e2e
+#   docker compose -f docker-compose.yml -f docker-compose.e2e.yml down -v
+#
+# A separate project ("sotd-e2e") with a throwaway tmpfs database, rate limits off, console
+# mail and plain-http cookies. It ignores .env; the secrets below are public, so never expose
+# this stack. POSTGRES_PASSWORD must still be set for interpolation (docker-compose.yml requires
+# it): `make e2e` and CI export a throwaway value.
+
+name: sotd-e2e
+
+x-e2e-api-environment: &e2e-api-environment
+  APP_BASE_URL: http://localhost:8080
+  SECRET_KEY: e2e-only-throwaway-secret-key-0123456789abcdef
+  TRUSTED_PROXY_COUNT: "1"
+  RATELIMIT_ENABLED: "false"
+  MAIL_BACKEND: console
+  ALLOW_CONSOLE_MAIL: "true"
+  SESSION_COOKIE_SECURE: "false"
+
+services:
+  db:
+    volumes: !reset []
+    tmpfs:
+      - /var/lib/postgresql/data
+    ports: !reset []
+
+  migrate:
+    env_file: !reset []
+    environment: *e2e-api-environment
+
+  api:
+    env_file: !reset []
+    environment: *e2e-api-environment

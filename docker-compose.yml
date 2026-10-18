@@ -1,0 +1,135 @@
+# Production-like stack: db + redis + migrate + api + web.
+#
+#   cp .env.example .env    # then fill in the secrets and settings it documents
+#   docker compose up --build --wait
+#   open http://localhost:8080
+#
+# Only `web` (nginx) is reachable from outside; it serves the SPA and proxies /api to `api`.
+# docker-compose.e2e.yml overrides this file for Playwright runs (no .env needed).
+
+name: sotd
+
+x-logging: &logging
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "5"
+
+# Shared by `api` and `migrate`: one image, one configuration.
+x-api: &api
+  build:
+    context: .
+    dockerfile: backend/Dockerfile
+  image: sotd-api:local
+  env_file:
+    - path: .env
+      required: true
+  environment:
+    DATABASE_URL: postgresql+psycopg://sotd:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}@db:5432/sotd
+    # One reverse proxy (the bundled nginx); set 2 when a TLS load balancer sits in front of it.
+    TRUSTED_PROXY_COUNT: ${TRUSTED_PROXY_COUNT:-1}
+    RATELIMIT_STORAGE_URI: redis://redis:6379/0
+  read_only: true
+  tmpfs:
+    - /tmp
+  cap_drop: [ALL]
+  security_opt: ["no-new-privileges:true"]
+  logging: *logging
+
+services:
+  db:
+    image: postgres:17.11-alpine3.24
+    environment:
+      POSTGRES_USER: sotd
+      POSTGRES_DB: sotd
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    # Loopback only: for `make api` against this database, backups and maintenance.
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready --username=sotd --dbname=sotd"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+      start_interval: 1s
+    security_opt: ["no-new-privileges:true"]
+    logging: *logging
+    restart: unless-stopped
+
+  redis:
+    image: redis:7.4.11-alpine3.21
+    # Rate-limit counters only: no persistence.
+    command: ["redis-server", "--save", "", "--appendonly", "no"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+      start_interval: 1s
+    security_opt: ["no-new-privileges:true"]
+    logging: *logging
+    restart: unless-stopped
+
+  migrate:
+    <<: *api
+    command: ["flask", "db", "upgrade"]
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: "no"
+
+  api:
+    <<: *api
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    expose: ["8000"]
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=3)
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+      start_interval: 1s
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    image: sotd-web:local
+    depends_on:
+      api:
+        condition: service_healthy
+    # Host port, optionally with a bind address (e.g. WEB_PORT=127.0.0.1:8080 behind a TLS proxy).
+    ports:
+      - "${WEB_PORT:-8080}:8080"
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--spider", "http://127.0.0.1:8080/healthz"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+      start_interval: 1s
+    logging: *logging
+    restart: unless-stopped
+
+volumes:
+  pgdata:

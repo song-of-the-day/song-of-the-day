@@ -1,0 +1,4 @@
+# Reviewed false positives for gitleaks: fabricated tokens in test fixtures, not credentials.
+# generic-api-key fires on ordinary test assertions that happen to sit next to a `token` variable.
+backend/tests/test_auth_sessions.py:generic-api-key:373
+frontend/src/features/auth/resetToken.test.ts:generic-api-key:7

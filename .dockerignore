@@ -1,8 +1,43 @@
-.git/
-assets/node_modules/
-priv/static/
+# Build context for both images is the repository root:
+#   docker build -f backend/Dockerfile .
+#   docker build -f frontend/Dockerfile .
+# Keep the context small and free of secrets, local state and build output.
 
-.dockerignore
-.env*
+# --- VCS, CI and local tooling ------------------------------------------------
+.git
+.github
+backups
+scripts
+
+# --- Secrets ------------------------------------------------------------------
+.env
+.env.*
 !.env.example
-docker-compose.override.yml
+
+# --- Dependencies and caches ----------------------------------------------------
+**/node_modules
+**/.venv
+**/__pycache__
+**/*.py[cod]
+**/.pytest_cache
+**/.mypy_cache
+**/.ruff_cache
+**/.eslintcache
+**/*.tsbuildinfo
+
+# --- Build and test output ------------------------------------------------------
+frontend/dist
+frontend/coverage
+frontend/playwright-report
+frontend/test-results
+frontend/blob-report
+htmlcov
+.coverage*
+**/.coverage*
+coverage.xml
+
+# --- Editors and OS -------------------------------------------------------------
+.idea
+.vscode
+**/.DS_Store
+**/*.swp

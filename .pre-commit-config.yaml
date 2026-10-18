@@ -1,0 +1,62 @@
+# pre-commit hooks: fast checks on the staged files. `make check` (which CI mirrors) remains the
+# full gate before every commit.
+#
+#   uvx pre-commit install          # once per clone
+#   uvx pre-commit run --all-files  # on demand
+#
+# The frontend hooks use the locally installed packages (`make setup` first).
+minimum_pre_commit_version: "4.0.0"
+default_install_hook_types: [pre-commit]
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+        args: [--fix=lf]
+      - id: check-yaml
+        # Syntax only: compose files use custom tags such as `!reset`.
+        args: [--unsafe]
+      - id: check-json
+        # tsconfig files are JSONC (comments allowed).
+        exclude: (^|/)tsconfig[^/]*\.json$
+      - id: check-toml
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: [--maxkb=600]
+      - id: check-executables-have-shebangs
+      - id: check-shebang-scripts-are-executable
+      - id: detect-private-key
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    # Keep in step with the ruff version locked in backend/uv.lock.
+    rev: v0.17.0
+    hooks:
+      - id: ruff-check
+        args: [--config=backend/pyproject.toml, --fix]
+        files: ^backend/
+      - id: ruff-format
+        args: [--config=backend/pyproject.toml]
+        files: ^backend/
+
+  - repo: local
+    hooks:
+      - id: eslint
+        name: eslint (frontend)
+        language: system
+        entry: scripts/frontend-hook.sh eslint --max-warnings=0 --no-warn-ignored --
+        files: ^frontend/.*\.(ts|tsx|js|mjs|cjs)$
+      - id: prettier
+        name: prettier (frontend)
+        language: system
+        entry: scripts/frontend-hook.sh prettier --write --ignore-unknown --
+        files: ^frontend/
+        exclude: ^frontend/pnpm-lock\.yaml$
+
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
+    hooks:
+      - id: gitleaks
